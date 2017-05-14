@@ -68,8 +68,11 @@ html {
     top: 20px;
     right: 26em;
 */    
-   
 }
+#logo{
+    
+   position: relative;
+} 
 
 .fa-camera-retro {
     position: absolute;
