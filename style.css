@@ -10,8 +10,9 @@ html {
 
 html {
     font-size: 14px;
-    background: rgba( 49, 202, 240, 0.875);
+    background: #b34ee5;
     font-family: 'Josefin Sans', sans-serif;
+       color: #6b258e;
 }
 
 .photobooth {
@@ -22,7 +23,7 @@ html {
 }
 
 .controls {
-    background: rgba( 49, 202, 240, 0.283);
+    background: #b34ee2;
 }
 
 .light {
@@ -31,6 +32,7 @@ html {
 
 .fa-lightbulb-o {
     cursor: pointer;
+ 
 }
 
 
@@ -55,11 +57,12 @@ html {
 }
 
 .fa-camera-retro {
-    color: rgba( 2, 145, 180, 0.919)
+
 }
 
-.fa-camera-retro:hover {
-    color: rgba( 1, 97, 121, 0.955);
+.fa-camera-retro:hover,
+.fa-lightbulb-o:hover {
+       color: yellow;
     cursor: pointer;
 }
 
