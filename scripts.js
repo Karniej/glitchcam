@@ -11,12 +11,15 @@ const lightGreenScreen = document.querySelector("#greenscreen");
 const lightRgbSplit = document.querySelector("#rgbsplit");
 const lightShadow = document.querySelector("#shadow");
 const moreeffects = document.querySelector("#moreeffects");
+
 moreeffects.addEventListener('click', function () {
             const rows = document.querySelectorAll(".rgb.row").forEach(row => {
                 if (row.classList.contains('hideme')) {
                     row.classList.remove('hideme');
+                    moreeffects.innerHTML ="hide effects";
                 } else {
                     row.classList.add('hideme');
+                    moreeffects.innerHTML ="more effects";
                 }
             });});
             // light the bulb!
