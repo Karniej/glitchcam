@@ -9,10 +9,18 @@ html {
 }
 
 html {
-    font-size: 14px;
+    font-size: 12px;
     background: #b34ee5;
     font-family: 'Josefin Sans', sans-serif;
-       color: #6b258e;
+    color: #6b258e;
+}
+
+.row {
+    text-align: center;
+    margin-top: 1em;    
+}
+.rgb{
+    margin-top: 2em;
 }
 
 .photobooth {
@@ -24,6 +32,15 @@ html {
 
 .controls {
     background: #b34ee2;
+    display: block;
+    margin: 0 auto;
+    width: 45%;
+}
+
+.photo{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .light {
@@ -32,7 +49,6 @@ html {
 
 .fa-lightbulb-o {
     cursor: pointer;
- 
 }
 
 
@@ -44,25 +60,24 @@ html {
     clear: both;
 }
 
-.photo {
-    width: 100%;
-    float: left;
-}
+
 
 .player {
     position: absolute;
+/*
     top: 20px;
-    right: 8px;
-    width: 200px;
+    right: 26em;
+*/    
+   
 }
 
 .fa-camera-retro {
-
+    position: absolute;
 }
 
 .fa-camera-retro:hover,
 .fa-lightbulb-o:hover {
-       color: yellow;
+    color: yellow;
     cursor: pointer;
 }
 
