@@ -1,45 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Get User Media Code Along!</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Get User Media Code Along!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
+
+
 </head>
+
 <body>
 
-  <div class="photobooth">
-    <div class="controls">
-      <button onClick="takePhoto()">Take Photo</button>
-      <div class="rgb">
-        <label for="rmin">Red Min:</label>
-        <input type="range" min=0 max=255 name="rmin">
-        <label for="rmax">Red Max:</label>
-        <input type="range" min=0 max=255 name="rmax">
+    <div class="photobooth">
+        <div class="controls">
+            <i onClick="takePhoto()" class="fa fa-3x fa-camera-retro" aria-hidden="true"></i>
+            <i class="fa fa-3x fa-lightbulb-o" id="greenscreen" aria-hidden="true"></i>
+            <span style="font-size:20px">move the sliders to adjust green screen</span>
+            <div class="rgb">
+                <label for="rmin">red min:</label>
+                <input type="range" min=0 max=255 name="rmin">
+                <label for="rmax">red max:</label>
+                <input type="range" min=0 max=255 name="rmax">
 
-        <br>
+                <br>
 
-        <label for="gmin">Green Min:</label>
-        <input type="range" min=0 max=255 name="gmin">
-        <label for="gmax">Green Max:</label>
-        <input type="range" min=0 max=255 name="gmax">
+                <label for="gmin">green min:</label>
+                <input type="range" min=0 max=255 name="gmin">
+                <label for="gmax">green max:</label>
+                <input type="range" min=0 max=255 name="gmax">
 
-        <br>
+                <br>
 
-        <label for="bmin">Blue Min:</label>
-        <input type="range" min=0 max=255 name="bmin">
-        <label for="bmax">Blue Max:</label>
-        <input type="range" min=0 max=255 name="bmax">
-      </div> 
+                <label for="bmin">blue min:</label>
+                <input type="range" min=0 max=255 name="bmin">
+                <label for="bmax">blue max:</label>
+                <input type="range" min=0 max=255 name="bmax">
+                
+                <i class="fa fa-lightbulb-o fa-3x" id="red" aria-hidden="true"></i>
+                <label for="red">red</label>
+                <input type="range" min=0 max=255 name="red">
+                <i class="fa fa-lightbulb-o fa-3x" id="green" aria-hidden="true"></i>
+                <label for="green">green</label>
+                <input type="range" min=0 max=255 name="green">
+                <i class="fa fa-lightbulb-o fa-3x" id="blue" aria-hidden="true"></i>
+                <label for="blue">blue</label>
+                <input type="range" min=0 max=255 name="blue">
+                <i class="fa fa-lightbulb-o fa-3x" id="rgbsplit" aria-hidden="true"></i>
+                <span style ="font-size: 20px;">rgb split</span>
+                <i class="fa fa-lightbulb-o fa-3x" id="shadow" aria-hidden="true"></i>
+<!--                <span style ="font-size: 20px;">shadow effect</span>-->
+                  <label for="shadow" style="font-size: 20px">shadow</label>
+                <input type="range" min=0 max=255 step="2" name="shadow">
+                
+            </div>
+        </div>
+
+        <canvas class="photo"></canvas>
+        <video class="player"></video>
+        <div class="strip"></div>
     </div>
 
-    <canvas class="photo"></canvas>
-    <video class="player"></video>
-    <div class="strip"></div>
-  </div>
+    <audio class="snap" src="http://wesbos.com/demos/photobooth/snap.mp3" hidden></audio>
 
-  <audio class="snap" src="http://wesbos.com/demos/photobooth/snap.mp3" hidden></audio>
-
-  <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 
 </body>
+
 </html>
