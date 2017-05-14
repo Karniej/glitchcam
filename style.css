@@ -10,9 +10,8 @@ html {
 
 html {
     font-size: 12px;
-    background: #b34ee5;
+    background: black;
     font-family: 'Josefin Sans', sans-serif;
-    color: #6b258e;
 }
 
 .row {
@@ -22,16 +21,23 @@ html {
 .rgb{
     margin-top: 2em;
 }
-
+#moreeffects{
+    margin: 0 auto;
+    display: block;
+    width: 20%;
+}
+.hideme{
+    display: none;
+}
 .photobooth {
-    background: white;
+    background: black;
+    color: lightyellow;
     max-width: 150rem;
     margin: 2rem auto;
     border-radius: 2px;
 }
 
 .controls {
-    background: #b34ee2;
     display: block;
     margin: 0 auto;
     width: 45%;
