@@ -79,7 +79,7 @@ html {
 */    
 }
 #logo{
-    
+   display:none;
    position: relative;
 } 
 
