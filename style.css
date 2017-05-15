@@ -33,7 +33,7 @@ html {
     background-image: url("IMG_20170515_093903.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; 
+    background-position: top; 
     color: black;
     max-width: 150rem;
     margin: 2rem auto;
