@@ -10,9 +10,129 @@ html {
 
 html {
     font-size: 12px;
-    background: black;
     font-family: 'Josefin Sans', sans-serif;
 }
+body {
+    background: -webkit-linear-gradient(bottom right, , white);
+    background: -o-linear-gradient(bottom right, #eaa8a8 , white);
+    background: linear-gradient(to top left, #eaa8a8, white) ;
+    overflow-x: hidden;
+}
+
+/*navbar*/
+.navbar-fixed-top{
+    background:transparent;
+    border-bottom: 1px solid black;
+}
+#logo{
+    max-width: 200px;
+    height: auto;
+}
+/*Sliders*/
+input {
+    background-color: transparent;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 3.5px 0;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  box-shadow: 3.5px 3.5px 7.6px #e85d9d, 0px 0px 3.5px #eb73ab;
+  background: #ff70ac;
+  border-radius: 25px;
+  border: 0px solid rgba(255, 87, 144, 0);
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px rgba(199, 0, 44, 0.52), 0px 0px 0px rgba(225, 0, 50, 0.52);
+  border: 0px solid #c92b69;
+  height: 19px;
+  width: 23px;
+  border-radius: 7px;
+  background: #d83072;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ff8fbe;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  box-shadow: 3.5px 3.5px 7.6px #e85d9d, 0px 0px 3.5px #eb73ab;
+  background: #ff70ac;
+  border-radius: 25px;
+  border: 0px solid rgba(255, 87, 144, 0);
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px rgba(199, 0, 44, 0.52), 0px 0px 0px rgba(225, 0, 50, 0.52);
+  border: 0px solid #c92b69;
+  height: 19px;
+  width: 23px;
+  border-radius: 7px;
+  background: #d83072;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #ff519a;
+  border: 0px solid rgba(255, 87, 144, 0);
+  border-radius: 50px;
+  box-shadow: 3.5px 3.5px 7.6px #e85d9d, 0px 0px 3.5px #eb73ab;
+}
+input[type=range]::-ms-fill-upper {
+  background: #ff70ac;
+  border: 0px solid rgba(255, 87, 144, 0);
+  border-radius: 50px;
+  box-shadow: 3.5px 3.5px 7.6px #e85d9d, 0px 0px 3.5px #eb73ab;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px rgba(199, 0, 44, 0.52), 0px 0px 0px rgba(225, 0, 50, 0.52);
+  border: 0px solid #c92b69;
+  height: 19px;
+  width: 23px;
+  border-radius: 7px;
+  background: #d83072;
+  cursor: pointer;
+  height: 12px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #ff70ac;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #ff8fbe;
+}
+/*Sliders*/
+
+/*Sidebar*/
+    .slide-in {
+      opacity:1;
+      transform:translateX(-30%) scale(1);
+    transition:all 1s;
+    }
+
+
+#sidebar-wrapper{
+    position: absolute;
+    z-index: 999999;
+    right: 0px;
+}
+/*sidebar*/
 
 .row {
     text-align: center;
@@ -21,41 +141,39 @@ html {
 .rgb{
     margin-top: 2em;
 }
-#moreeffects{
-    margin: 0 auto;
-    display: block;
-    width: 20%;
-}
 .hideme{
-    display: none;
+    opacity:0;
+    transition:all 1s;
+    transform:translateX(+90%) scale(0.95);
 }
 .photobooth {
-    background: black;
-    color: lightyellow;
+    color: black;
     max-width: 150rem;
     margin: 2rem auto;
     border-radius: 2px;
+    margin-top: 5em;
 }
 
-.controls {
+.container-fluid {
     display: block;
     margin: 0 auto;
-    width: 45%;
 }
 
 .photo{
     display: block;
     margin: 0 auto;
-    width: 100%;
+    width: 50%;
+    margin-top: 4em;
 }
 
 .light {
     color: yellow;
 }
 
-.fa-lightbulb-o {
+.fa{
     cursor: pointer;
 }
+
 
 
 /*clearfix*/
@@ -67,7 +185,6 @@ html {
 }
 
 
-
 .player {
     position: absolute;
 /*
@@ -75,11 +192,6 @@ html {
     right: 26em;
 */    
 }
-#logo{
-    
-   position: relative;
-} 
-
 .fa-camera-retro {
     position: absolute;
 }

@@ -3,110 +3,108 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>GlitchCam</title>
+    <title>glitchCam</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
 
 
 </head>
 
 <body>
+   <div id="wrapper">
+    <ul class="nav navbar-fixed-top">
+        <li class="col-sm-3">
+            <img src="lgoo.png" id="logo" />
+        </li>
+        <li class="col-sm-1">
+            <i class="fa fa-3x fa-lightbulb-o" id="greenscreen" aria-hidden="true"></i><br><span>green screen</span>
+        </li>
+        <li class="col-sm-1">
+            <i class="fa fa-lightbulb-o fa-3x" id="rgbsplit" aria-hidden="true"></i><br>
+            <span>rgb split</span>
+        </li>
 
+        <li class="col-sm-1">
+            <i class="fa fa-lightbulb-o fa-3x" id="red" aria-hidden="true"></i><br>
+            <label for="red">red</label>
+
+        </li>
+
+        <li class="col-sm-1">
+            <i class="fa fa-lightbulb-o fa-3x" id="green" aria-hidden="true"></i><br>
+            <label for="green">green</label>
+
+        </li>
+        <li class="col-sm-1">
+
+            <i class="fa fa-lightbulb-o fa-3x" id="blue" aria-hidden="true"></i><br>
+            <label for="blue">blue</label>
+        </li>
+
+        <li class="col-sm-1">
+            <i class="fa fa-lightbulb-o fa-3x" id="shadow" aria-hidden="true"></i><br>
+            <label for="shadow">shadow</label>
+        </li>
+        <li class="col-sm-1" id="more_options"><i class="fa fa-3x fa-bars" aria-hidden="true" name="more_options"></i>
+        </li>
+    </ul>
     <div class="photobooth">
-        <div class="controls container-fluid">
-           <div class="row">
-               <img id="logo" src="Glitch%20Cam_burned%20(1).png">
-           </div>
-            <div class="row">                    
-                <div class="shadowsplit">
-                    <div class=" col-sm-4">
-                        <i class="fa fa-3x fa-lightbulb-o" id="greenscreen" aria-hidden="true"></i>
-                        <br>
-                        <span>move the sliders to adjust green screen</span>
-                    </div>
-                        <video class="player col-sm-4"></video>`
-                    <div class=" col-sm-4">
-                        <i class="fa fa-lightbulb-o fa-3x" id="rgbsplit" aria-hidden="true"></i>
-                        <br>
-                        <span>rgb split</span>
-                    </div>
-                </div>
-            </div>
-            <div id="moreeffects">
-                        <span>hide effects</span>
-                    </div>
-                <div class="rgb row">
-                    <div class="col-sm-6">
+           <div id="sidebar-wrapper" class="hideme slide-in">
+                <ul class="sidebar-nav">
+                    <li>
                         <label class="sliders" for="rmin">red min:</label>
                         <input class="sliders" type="range" min=0 max=255 name="rmin">
-                    </div>
-                    <div class="col-sm-6">
-
+                    </li>
+                    <li>
                         <label class="sliders" for="rmax">red max:</label>
                         <input class="sliders" type="range" min=0 max=255 name="rmax">
-                    </div>
-
-                </div>
-                <div class="rgb row">
-                    <div class="col-sm-6">
+                    </li>
+                    <li>
                         <label class="sliders" for="gmin">green min:</label>
                         <input class="sliders" type="range" min=0 max=255 name="gmin">
-                    </div>
-                    <div class="col-sm-6">
+                    </li>
+                    <li>
                         <label class="sliders" for="gmax">green max:</label>
                         <input class="sliders" type="range" min=0 max=255 name="gmax">
-                    </div>
-                </div>
-                <div class="rgb row">
-                    <div class="col-sm-6">
+                    </li>
+                    <li>
                         <label class="sliders" for="bmin">blue min:</label>
                         <input class="sliders" type="range" min=0 max=255 name="bmin">
-                    </div>
-                    <div class="col-sm-6">
+                    </li>
+                    <li>
                         <label class="sliders" for="bmax">blue max:</label>
                         <input class="sliders" type="range" min=0 max=255 name="bmax">
-                    </div>
-                </div>
-                <div class="rgb row">
-                    <div class="col-sm-6">
-                        <i class="fa fa-lightbulb-o fa-3x" id="red" aria-hidden="true"></i>
-                        <br>
-                        <label for="red">red</label>
+                    </li>
+                    <li>red
                         <input type="range" min=0 max=255 name="red">
-                    </div>
-                    <div class="col-sm-6">
-                        <i class="fa fa-lightbulb-o fa-3x" id="green" aria-hidden="true"></i>
-                        <br>
-                        <label for="green">green</label>
+                    </li>
+                    <li>green
                         <input type="range" min=0 max=255 name="green">
-                    </div>
-                    <div class="col-sm-6">
-                        <i class="fa fa-lightbulb-o fa-3x" id="blue" aria-hidden="true"></i>
-                        <br>
-                        <label for="blue">blue</label>
+                    </li>
+                    <li>blue
                         <input type="range" min=0 max=255 name="blue">
-                    </div>
-                    <div class="col-sm-6">
-                        <i class="fa fa-lightbulb-o fa-3x" id="shadow" aria-hidden="true"></i>
-                        <br>
-                        <label for="shadow">shadow</label>
+                    </li>
+                    <li>shadow
                         <input type="range" min=0 max=255 step="2" name="shadow">
-                    </div>
-                    
-                </div>
-
-                <i onClick="takePhoto()" class="fa fa-3x fa-camera-retro" aria-hidden="true"></i>
-                <canvas class="photo"></canvas>
-                <div class="strip"></div>
+                    </li>
+                </ul>
             </div>
+        <div class="container-fluid">
+            <div class="row">
+                <i onClick="takePhoto()" class="fa fa-3x fa-camera-retro" aria-hidden="true"></i>
+                <canvas class="photo">
+                    <video class="player col-sm-2"></video>
+                </canvas>
+
+            </div>
+            <div class="strip"></div>
         </div>
-
-        <audio class="snap" src="http://wesbos.com/demos/photobooth/snap.mp3" hidden></audio>
-
-        <script src="scripts.js"></script>
+    </div>
+    </div>
+    <audio class="snap" src="http://wesbos.com/demos/photobooth/snap.mp3" hidden></audio>
+    <script src="scripts.js"></script>
 
 </body>
 

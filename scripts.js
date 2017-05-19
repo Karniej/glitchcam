@@ -10,18 +10,16 @@ const lightBlue = document.querySelector("#blue");
 const lightGreenScreen = document.querySelector("#greenscreen");
 const lightRgbSplit = document.querySelector("#rgbsplit");
 const lightShadow = document.querySelector("#shadow");
-const moreeffects = document.querySelector("#moreeffects");
+const moreoptions = document.querySelector("#more_options");
 
-moreeffects.addEventListener('click', function () {
-            const rows = document.querySelectorAll(".rgb.row").forEach(row => {
-                if (row.classList.contains('hideme')) {
-                    row.classList.remove('hideme');
-                    moreeffects.innerHTML ="hide effects";
+moreoptions.addEventListener('click', function () {
+            const sidebar = document.querySelector("#sidebar-wrapper");
+                if (sidebar.classList.contains('hideme')) {
+                    sidebar.classList.remove('hideme');
                 } else {
-                    row.classList.add('hideme');
-                    moreeffects.innerHTML ="more effects";
+                    sidebar.classList.add('hideme');
                 }
-            });});
+            });
             // light the bulb!
             lightbulb.forEach(bulb => {
                 bulb.addEventListener('click', function giveMeLight() {
