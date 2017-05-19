@@ -13,7 +13,7 @@ html {
     font-family: 'Josefin Sans', sans-serif;
 }
 body {
-    background: -webkit-linear-gradient(bottom right, , white);
+    background: -webkit-linear-gradient(bottom right,#eaa8a8 , white);
     background: -o-linear-gradient(bottom right, #eaa8a8 , white);
     background: linear-gradient(to top left, #eaa8a8, white) ;
     overflow-x: hidden;
@@ -147,7 +147,6 @@ input[type=range]:focus::-ms-fill-upper {
     transform:translateX(+90%) scale(0.95);
 }
 .photobooth {
-    color: black;
     max-width: 150rem;
     margin: 2rem auto;
     border-radius: 2px;
@@ -192,6 +191,10 @@ input[type=range]:focus::-ms-fill-upper {
     right: 26em;
 */    
 }
+
+#logo{
+      position: relative;
+} 
 .fa-camera-retro {
     position: absolute;
 }

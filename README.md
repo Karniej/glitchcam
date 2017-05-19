@@ -1,2 +1,5 @@
-# webcamfun
-My version of WebCam Fun. Made it during 30days of Javascript Challenge. I recommend to do this for every starting Front End Developer, you can do it there: https://javascript30.com/.
+#GlitchCam
+Glitch Cam is my version of WebCam Fun of 30days of Javascript Challenge. 
+In order for this to work correctly you need to allow the app to use your camera. 
+Light the bulb ,move the to see the effect. Click the Small camera to take a photo and download it. 
+Few Updates are comming.
