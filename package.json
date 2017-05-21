@@ -1,14 +1,43 @@
 {
-  "name": "gum",
+  "name": "glitchcam",
   "version": "1.0.0",
-  "description": "",
-  "main": "scripts.js",
+  "description": "GlitchCam - my version of WebCam of 30days of Javascript Challenge. https://karniej.github.io/glitchcam",
+  "main": "index.js",
   "scripts": {
-    "start" : "browser-sync start --server --files '*.css, *.html, *.js'"
+    "build": "webpack",
+    "start": "webpack-dev-server"
   },
-  "author": "",
+  "babel": {
+    "ignore": [
+      "node_modules/**/*"
+    ],
+    "presets": [
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ]
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karniej/glitchcam.git"
+  },
+  "keywords": [],
+  "author": "Pawel Karniej",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Karniej/glitchcam/issues"
+  },
+  "homepage": "https://github.com/Karniej/glitchcam#readme",
   "devDependencies": {
-    "browser-sync": "^2.12.5"
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-types": "^6.24.1",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
   }
 }
