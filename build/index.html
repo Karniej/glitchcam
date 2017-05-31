@@ -4,47 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <title>glitchCam</title>
-    <link rel="stylesheet" href="build/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
-
-
 </head>
 
 <body>
+  <div class="container-fluid">
    <div id="wrapper">
     <ul class="nav navbar-fixed-top">
         <li class="col-sm-3">
-            <img src="build/lgoo.png" id="logo" />
+          <svg id="logo" width="159.05601501464844" height="46.24674987792969" viewBox="66.901 170.472 159.056 46.2467" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <style id="bx-google-fonts">@import url(https://fonts.googleapis.com/css?family=Alex+Brush:400);</style>
+            </defs>
+            <text x="73.066" y="201.297" style="font-family: &quot;Alex Brush&quot;; font-size: 36px; font-weight: bold; white-space: pre;" transform="matrix(1, 0, 0, 1, 0, 3.552713678800501e-15)">GlitchCam</text>
+            <rect x="66.901" y="170.472" width="159.056" height="45.004" style="stroke-linecap: square; fill: none; stroke: rgb(0, 0, 0);" transform="matrix(1, 0, 0, 1, 0, 3.552713678800501e-15)"/>
+          </svg>
         </li>
         <li class="col-sm-1">
-            <i class="fa fa-3x fa-lightbulb-o" id="greenscreen" aria-hidden="true"></i><br><span>green screen</span>
+            <i class="fa fa-3x fa-bolt" id="greenscreen" aria-hidden="true"></i><br><span>green screen</span>
         </li>
         <li class="col-sm-1">
-            <i class="fa fa-lightbulb-o fa-3x" id="rgbsplit" aria-hidden="true"></i><br>
+            <i class="fa fa-bolt fa-3x" id="rgbsplit" aria-hidden="true"></i><br>
             <span>rgb split</span>
         </li>
 
         <li class="col-sm-1">
-            <i class="fa fa-lightbulb-o fa-3x" id="red" aria-hidden="true"></i><br>
+            <i class="fa fa-bolt fa-3x" id="red" aria-hidden="true"></i><br>
             <label for="red">red</label>
 
         </li>
 
         <li class="col-sm-1">
-            <i class="fa fa-lightbulb-o fa-3x" id="green" aria-hidden="true"></i><br>
+            <i class="fa fa-bolt fa-3x" id="green" aria-hidden="true"></i><br>
             <label for="green">green</label>
 
         </li>
         <li class="col-sm-1">
 
-            <i class="fa fa-lightbulb-o fa-3x" id="blue" aria-hidden="true"></i><br>
+            <i class="fa fa-bolt fa-3x" id="blue" aria-hidden="true"></i><br>
             <label for="blue">blue</label>
         </li>
 
         <li class="col-sm-1">
-            <i class="fa fa-lightbulb-o fa-3x" id="shadow" aria-hidden="true"></i><br>
+            <i class="fa fa-bolt fa-3x" id="shadow" aria-hidden="true"></i><br>
             <label for="shadow">shadow</label>
         </li>
         <li class="col-sm-1" id="more_options"><i class="fa fa-3x fa-bars" aria-hidden="true" name="more_options"></i>
@@ -93,18 +98,20 @@
             </div>
         <div class="container-fluid">
             <div class="row">
-                <i onClick="takePhoto()" class="fa fa-3x fa-camera-retro" aria-hidden="true"></i>
+                <i id="photoclick" class="fa fa-3x fa-camera-retro" aria-hidden="true"></i>
                 <canvas class="photo">
-                    <video class="player col-sm-2"></video>
+                  <video class="player col-sm-2"></video>
                 </canvas>
 
             </div>
             <div class="strip"></div>
+
         </div>
     </div>
     </div>
-    <audio class="snap" src="http://wesbos.com/demos/photobooth/snap.mp3" hidden></audio>
-    <script src="build/bundle.js"></script>
+  </div>
+    <audio class="snap" src="takephoto.wav" hidden></audio>
+    <script type="text/javascript" src="bundle.js"></script>
 
 </body>
 
