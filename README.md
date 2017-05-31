@@ -5,4 +5,6 @@ Light the bulb ,move the sliders to see the green screen effect. Click the Small
 Few Updates are comming.
 
 Update 26.05:
-Some bug accured during last merge which made "green screen effect" stopped working. Going to fix this as soon as possible. 
+Some bug accured during last merge which made "green screen effect" stopped working. Going to fix this as soon as possible. - fixed
+
+ 
