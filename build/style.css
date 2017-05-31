@@ -12,160 +12,45 @@ html {
 }
 
 body {
-  background: -webkit-linear-gradient(bottom right, #eaa8a8, white);
-  background: -o-linear-gradient(bottom right, #eaa8a8, white);
-  background: linear-gradient(to top left, #eaa8a8, white);
   overflow-x: hidden;
 }
 
 
 /*navbar*/
 
-.navbar-fixed-top {
-  background: transparent;
-  border-bottom: 1px solid black;
-}
-
 #logo {
-  max-width: 200px;
-  height: auto;
+  padding-top: 2em;
+  width: 20em;
+  margin: auto;
 }
 
-
-/*Sliders*/
-
-input {
-  background-color: transparent;
+.options {
+  list-style-type: none;
 }
-
-input[type=range] {
-  -webkit-appearance: none;
-  width: 100%;
-  margin: 3.5px 0;
+.options li{
+  padding: 2em;
+  min-width: 5em;
 }
-
-input[type=range]:focus {
-  outline: none;
-}
-
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 12px;
-  cursor: pointer;
-  box-shadow: 3.5px 3.5px 7.6px #e85d9d, 0px 0px 3.5px #eb73ab;
-  background: #ff70ac;
-  border-radius: 25px;
-  border: 0px solid rgba(255, 87, 144, 0);
-}
-
-input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0px 0px 0px rgba(199, 0, 44, 0.52), 0px 0px 0px rgba(225, 0, 50, 0.52);
-  border: 0px solid #c92b69;
-  height: 19px;
-  width: 23px;
-  border-radius: 7px;
-  background: #d83072;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -3.5px;
-}
-
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #ff8fbe;
-}
-
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 12px;
-  cursor: pointer;
-  box-shadow: 3.5px 3.5px 7.6px #e85d9d, 0px 0px 3.5px #eb73ab;
-  background: #ff70ac;
-  border-radius: 25px;
-  border: 0px solid rgba(255, 87, 144, 0);
-}
-
-input[type=range]::-moz-range-thumb {
-  box-shadow: 0px 0px 0px rgba(199, 0, 44, 0.52), 0px 0px 0px rgba(225, 0, 50, 0.52);
-  border: 0px solid #c92b69;
-  height: 19px;
-  width: 23px;
-  border-radius: 7px;
-  background: #d83072;
-  cursor: pointer;
-}
-
-input[type=range]::-ms-track {
-  width: 100%;
-  height: 12px;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-
-input[type=range]::-ms-fill-lower {
-  background: #ff519a;
-  border: 0px solid rgba(255, 87, 144, 0);
-  border-radius: 50px;
-  box-shadow: 3.5px 3.5px 7.6px #e85d9d, 0px 0px 3.5px #eb73ab;
-}
-
-input[type=range]::-ms-fill-upper {
-  background: #ff70ac;
-  border: 0px solid rgba(255, 87, 144, 0);
-  border-radius: 50px;
-  box-shadow: 3.5px 3.5px 7.6px #e85d9d, 0px 0px 3.5px #eb73ab;
-}
-
-input[type=range]::-ms-thumb {
-  box-shadow: 0px 0px 0px rgba(199, 0, 44, 0.52), 0px 0px 0px rgba(225, 0, 50, 0.52);
-  border: 0px solid #c92b69;
-  height: 19px;
-  width: 23px;
-  border-radius: 7px;
-  background: #d83072;
-  cursor: pointer;
-  height: 12px;
-}
-
-input[type=range]:focus::-ms-fill-lower {
-  background: #ff70ac;
-}
-
-input[type=range]:focus::-ms-fill-upper {
-  background: #ff8fbe;
-}
-
-
-/*Sliders*/
-
-
 /*Sidebar*/
 
 .slide-in {
   opacity: 1;
-  transform: translateX(-30%) scale(1);
   transition: all 1s;
 }
 
-#sidebar-wrapper {
-  position: absolute;
-  z-index: 999999;
-  right: 0px;
+.sidebar-nav{
+  list-style-type: none;
+    padding-left: 0;
+    width: 50%;
+    margin: auto;
 }
-
-
+.row{
+  margin: 0.5em;
+}
 /*sidebar*/
-
-.row {
-  text-align: center;
-  margin-top: 1em;
-}
-
 .hideme {
   opacity: 0;
   transition: all 1s;
-  transform: translateX(+90%) scale(0.95);
 }
 
 .photobooth {
@@ -182,9 +67,13 @@ input[type=range]:focus::-ms-fill-upper {
 
 .photo {
   display: block;
-  margin: 0 auto;
-  width: 50%;
-  margin-top: 4em;
+  margin: auto;
+  width: 60%;
+  margin-top: 3em;
+  border: 3px solid black;
+  -webkit-box-shadow: -1px 6px 65px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 6px 65px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 6px 65px 0px rgba(0, 0, 0, 0.75);
 }
 
 .light {
@@ -203,18 +92,6 @@ input[type=range]:focus::-ms-fill-upper {
   display: block;
   clear: both;
 }
-
-.player {
-  position: absolute;
-  /*
-    top: 20px;
-    right: 26em;
-*/
-}
-.fa-camera-retro {
-  position: absolute;
-}
-
 .fa-camera-retro:hover, .fa-lightbulb-o:hover {
   color: yellow;
   cursor: pointer;
@@ -232,6 +109,8 @@ input[type=range]:focus::-ms-fill-upper {
 
 .strip {
   padding: 2rem;
+  width: 80%;
+  margin: auto;
 }
 
 .strip img {

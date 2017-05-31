@@ -2,116 +2,112 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>glitchCam</title>
-    <link rel="stylesheet" href="build/style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>GlitchCam</title>
+  <link rel="stylesheet" href="build/style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
 </head>
 
 <body>
-  <div class="container-fluid">
-   <div id="wrapper">
-    <ul class="nav navbar-fixed-top">
-        <li class="col-sm-3">
-          <svg id="logo" width="159.05601501464844" height="46.24674987792969" viewBox="66.901 170.472 159.056 46.2467" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <style id="bx-google-fonts">@import url(https://fonts.googleapis.com/css?family=Alex+Brush:400);</style>
-            </defs>
-            <text x="73.066" y="201.297" style="font-family: &quot;Alex Brush&quot;; font-size: 36px; font-weight: bold; white-space: pre;" transform="matrix(1, 0, 0, 1, 0, 3.552713678800501e-15)">GlitchCam</text>
-            <rect x="66.901" y="170.472" width="159.056" height="45.004" style="stroke-linecap: square; fill: none; stroke: rgb(0, 0, 0);" transform="matrix(1, 0, 0, 1, 0, 3.552713678800501e-15)"/>
-          </svg>
-        </li>
-        <li class="col-sm-1">
-            <i class="fa fa-3x fa-bolt" id="greenscreen" aria-hidden="true"></i><br><span>green screen</span>
-        </li>
-        <li class="col-sm-1">
-            <i class="fa fa-bolt fa-3x" id="rgbsplit" aria-hidden="true"></i><br>
-            <span>rgb split</span>
-        </li>
-
-        <li class="col-sm-1">
-            <i class="fa fa-bolt fa-3x" id="red" aria-hidden="true"></i><br>
-            <label for="red">red</label>
-
-        </li>
-
-        <li class="col-sm-1">
-            <i class="fa fa-bolt fa-3x" id="green" aria-hidden="true"></i><br>
-            <label for="green">green</label>
-
-        </li>
-        <li class="col-sm-1">
-
-            <i class="fa fa-bolt fa-3x" id="blue" aria-hidden="true"></i><br>
-            <label for="blue">blue</label>
-        </li>
-
-        <li class="col-sm-1">
-            <i class="fa fa-bolt fa-3x" id="shadow" aria-hidden="true"></i><br>
-            <label for="shadow">shadow</label>
-        </li>
-        <li class="col-sm-1" id="more_options"><i class="fa fa-3x fa-cogs" aria-hidden="true" name="more_options"></i>
-        </li>
-    </ul>
+  <div id="container-fluid">
+    <div id="logo">
+      <svg viewBox="66.901 170.472 159.056 46.2467" xmlns="http://www.w3.org/2000/svg">
+       <defs>
+         <style id="bx-google-fonts">@import url(https://fonts.googleapis.com/css?family=Alex+Brush:400);</style>
+       </defs>
+       <text x="73.066" y="201.297" style="font-family: &quot;Alex Brush&quot;; font-size: 36px; font-weight: bold; white-space: pre;" transform="matrix(1, 0, 0, 1, 0, 3.552713678800501e-15)">GlitchCam</text>
+       <rect x="66.901" y="170.472" width="159.056" height="45.004" style="stroke-linecap: square; fill: none; stroke: rgb(0, 0, 0);" transform="matrix(1, 0, 0, 1, 0, 3.552713678800501e-15)"/>
+     </svg>
+    </div>
     <div class="photobooth">
-           <div id="sidebar-wrapper" class="hideme slide-in">
-                <ul class="sidebar-nav">
-                    <li>
-                        <label class="sliders" for="rmin">red min:</label>
-                        <input class="sliders" type="range" min=0 max=255 name="rmin">
-                    </li>
-                    <li>
-                        <label class="sliders" for="rmax">red max:</label>
-                        <input class="sliders" type="range" min=0 max=255 name="rmax">
-                    </li>
-                    <li>
-                        <label class="sliders" for="gmin">green min:</label>
-                        <input class="sliders" type="range" min=0 max=255 name="gmin">
-                    </li>
-                    <li>
-                        <label class="sliders" for="gmax">green max:</label>
-                        <input class="sliders" type="range" min=0 max=255 name="gmax">
-                    </li>
-                    <li>
-                        <label class="sliders" for="bmin">blue min:</label>
-                        <input class="sliders" type="range" min=0 max=255 name="bmin">
-                    </li>
-                    <li>
-                        <label class="sliders" for="bmax">blue max:</label>
-                        <input class="sliders" type="range" min=0 max=255 name="bmax">
-                    </li>
-                    <li>red
-                        <input type="range" min=0 max=255 name="red">
-                    </li>
-                    <li>green
-                        <input type="range" min=0 max=255 name="green">
-                    </li>
-                    <li>blue
-                        <input type="range" min=0 max=255 name="blue">
-                    </li>
-                    <li>shadow
-                        <input type="range" min=0 max=255 step="2" name="shadow">
-                    </li>
-                </ul>
-            </div>
-        <div class="container-fluid">
-            <div class="row">
-                <i id="photoclick" class="fa fa-3x fa-camera-retro" aria-hidden="true"></i>
-                <canvas class="photo">
-                  <video class="player col-sm-2"></video>
-                </canvas>
+      <canvas class="photo">
+          <video class="player"></video>
+      </canvas>
+      <div class="row text-center">
 
-            </div>
-            <div class="strip"></div>
+        <i id="photoclick" class="fa fa-2x fa-camera-retro" aria-hidden="true"></i><br>
 
-        </div>
+      </div>
+
+      <div class="row ">
+        <ul class="options text-center list-inline">
+          <li>
+            <i class="fa fa-2x fa-bolt" id="greenscreen" aria-hidden="true"></i><br><span>green screen</span>
+          </li>
+          <li>
+            <i class="fa fa-bolt fa-2x" id="rgbsplit" aria-hidden="true"></i><br>
+            <span>rgb split</span>
+          </li>
+          <li>
+            <i class="fa fa-bolt fa-2x" id="red" aria-hidden="true"></i><br>
+            <label for="red">red</label>
+          </li>
+          <li>
+            <i class="fa fa-bolt fa-2x" id="green" aria-hidden="true"></i><br>
+            <label for="green">green</label>
+          </li>
+          <li>
+            <i class="fa fa-bolt fa-2x" id="blue" aria-hidden="true"></i><br>
+            <label for="blue">blue</label>
+          </li>
+          <li>
+            <i class="fa fa-bolt fa-2x" id="shadow" aria-hidden="true"></i><br>
+            <label for="shadow">shadow</label>
+          </li>
+        </ul>
+      </div>
+      <div class="row text-center">
+        <i id="more_options" class=" fa fa-2x fa-cogs" aria-hidden="true" name="more_options"></i>
+      </div>
+      <div id="sidebar-wrapper" class="hideme slide-in row text-center">
+        <ul class="sidebar-nav">
+          <li>
+            <label class="sliders" for="rmin">red min:</label>
+            <input class="sliders" type="range" min=0 max=255 name="rmin">
+          </li>
+          <li>
+            <label class="sliders" for="rmax">red max:</label>
+            <input class="sliders" type="range" min=0 max=255 name="rmax">
+          </li>
+          <li>
+            <label class="sliders" for="gmin">green min:</label>
+            <input class="sliders" type="range" min=0 max=255 name="gmin">
+          </li>
+          <li>
+            <label class="sliders" for="gmax">green max:</label>
+            <input class="sliders" type="range" min=0 max=255 name="gmax">
+          </li>
+          <li>
+            <label class="sliders" for="bmin">blue min:</label>
+            <input class="sliders" type="range" min=0 max=255 name="bmin">
+          </li>
+          <li>
+            <label class="sliders" for="bmax">blue max:</label>
+            <input class="sliders" type="range" min=0 max=255 name="bmax">
+          </li>
+          <li>red
+            <input type="range" min=0 max=255 name="red">
+          </li>
+          <li>green
+            <input type="range" min=0 max=255 name="green">
+          </li>
+          <li>blue
+            <input type="range" min=0 max=255 name="blue">
+          </li>
+          <li>shadow
+            <input type="range" min=0 max=255 step="2" name="shadow">
+          </li>
+        </ul>
+      </div>
+      </ul>
     </div>
-    </div>
+    <div class="strip"></div>
   </div>
-    <audio class="snap" src="build/takephoto.wav" hidden></audio>
-    <script type="text/javascript" src="build/bundle.js"></script>
+  </div>
+  <audio class="snap" src="build/takephoto.wav" hidden></audio>
+  <script type="text/javascript" src="build/bundle.js"></script>
 
 </body>
 
