@@ -35,6 +35,7 @@ body {
 
 .slide-in {
   opacity: 1;
+  display: block;
   transition: all 1s;
 }
 
@@ -50,6 +51,7 @@ body {
 /*sidebar*/
 .hideme {
   opacity: 0;
+  display: none;
   transition: all 1s;
 }
 
