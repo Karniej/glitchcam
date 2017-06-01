@@ -34,9 +34,9 @@ body {
 /*Sidebar*/
 
 .slide-in {
+  transition: all 1s;
   opacity: 1;
   display: block;
-  transition: all 1s;
 }
 
 .sidebar-nav{
@@ -50,9 +50,9 @@ body {
 }
 /*sidebar*/
 .hideme {
+  transition: all 1s;
   opacity: 0;
   display: none;
-  transition: all 1s;
 }
 
 .photobooth {
